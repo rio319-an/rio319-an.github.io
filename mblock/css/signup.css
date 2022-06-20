@@ -67,10 +67,9 @@ main {
 main .container{
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 main .login-con{
-    width: 40%;
+    width: 80%;
     height: 25%;
     background-color: white;
     border-radius: 15px;
@@ -78,20 +77,31 @@ main .login-con{
 }
 main h2{
     font-size: 1.5rem;
-    padding: 1rem 0 2rem 0;
+    padding: 1rem 0 3rem 0;
     letter-spacing: 2px;
+}
+main .form-group::after{
+    content: "";
+    display: block;
+    clear: both;
 }
 main .form-group{
     margin-bottom: 1.25rem;
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+}
+main .form-group:nth-child(2n){
+    margin-right: 0;
 }
 main .form-group label{
     display: block;
-    margin-bottom: 0.6rem;
+    margin-bottom: 0.75rem;
     color: #555555;
 }
 main .form-group input{
     width: 100%;
-    padding: 1rem;
+    padding: 0.8rem;
     outline: none;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -100,6 +110,36 @@ main .form-group input{
 main .form-group input:focus{
     border: 1px solid #a7e0a5;
     box-shadow: 0 0 5px #a7e0a5;
+}
+main .form-group .profile-img{
+    position: relative;
+    border: 2px dashed #ccc;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 180px;
+    font-size: 0.8rem;
+    color: #555555;
+    cursor: pointer;
+}
+main .form-group .profile-img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 5px;
+    display: none;
+}
+main .form-group .profile-img img.active{
+    display: block;
+}
+main .form-group .profile-img i{
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+    color: #11998e;
 }
 main button{
     width: 100%;
