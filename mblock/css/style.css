@@ -47,7 +47,7 @@ header button {
 }
 header h1 button {
     width: 100%;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #a7e0a5;
     padding-bottom: 5px;
@@ -72,7 +72,7 @@ header nav ul li{
     flex-direction: column;
 }
 header nav ul li a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     transition: all .2s;
@@ -118,7 +118,7 @@ header nav ul li:hover .dropdown ul li a{
     font-weight: 400;
     transition: all .2s;
     padding: 0.75rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 header nav ul li:hover .dropdown ul li:hover a{
     color: #54c242;
@@ -134,7 +134,7 @@ main {
     margin-top: 75px;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../images/triangles-1430105.png);
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/triangles-1430105.png);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -165,7 +165,7 @@ main button.start{
     cursor: pointer;
 }
 main button:hover.start{
-    background: linear-gradient(90deg,rgba(113,178,128,0.8),rgba(113,178,128,0.8));
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6));
 }
 main button.down {
     background-color: transparent;
@@ -243,7 +243,7 @@ section .board-con::after{
 }
 section .board-con .board-inner{
     width: 30%;
-    height: 384px;
+    height: 476px;
     padding: 0 0 2rem 0;
     float: left;
     margin-right: 5%;
@@ -261,7 +261,7 @@ section .board-con .board-inner img{
     border-radius: 10px 10px 0 0;
 }
 section .board-con .board-inner .content{
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1.5rem;
     height: 40%;
 }
 section .board-con .board-inner .content h3{

@@ -47,7 +47,7 @@ header button {
 }
 header h1 button {
     width: 100%;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #a7e0a5;
     padding-bottom: 5px;
@@ -72,7 +72,7 @@ header nav ul li{
     flex-direction: column;
 }
 header nav ul li a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     transition: all .2s;
@@ -118,7 +118,7 @@ header nav ul li:hover .dropdown ul li a{
     font-weight: 400;
     transition: all .2s;
     padding: 0.75rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 header nav ul li:hover .dropdown ul li:hover a{
     color: #54c242;
@@ -199,12 +199,9 @@ section .board-con::after{
     display: block;
     clear: both;
 }
-section .board-con{
-    margin-top: 5rem;
-}
 section .board-con .board-inner{
     width: 30%;
-    height: 384px;
+    height: 476px;
     padding: 0 0 2rem 0;
     margin-bottom: 2rem;
     float: left;
@@ -241,7 +238,7 @@ section .board-con .board-inner img{
     border-radius: 10px 10px 0 0;
 }
 section .board-con .board-inner .content{
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1.5rem;
     height: 40%;
 }
 section .board-con .board-inner .content h3{

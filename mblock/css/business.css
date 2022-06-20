@@ -46,7 +46,7 @@ header button {
 }
 header h1 button {
     width: 100%;
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #a7e0a5;
     padding-bottom: 5px;
@@ -71,7 +71,7 @@ header nav ul li{
     flex-direction: column;
 }
 header nav ul li a{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     align-items: center;
     transition: all .2s;
@@ -117,7 +117,7 @@ header nav ul li:hover .dropdown ul li a{
     font-weight: 400;
     transition: all .2s;
     padding: 0.75rem 0;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 header nav ul li:hover .dropdown ul li:hover a{
     color: #54c242;
