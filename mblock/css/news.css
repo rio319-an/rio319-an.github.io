@@ -194,6 +194,9 @@ section .board-main .right button:hover{
     background-color: #000;
     color: white;
 }
+section .board-con{
+    margin-top: 3rem;
+}
 section .board-con::after{
     content: "";
     display: block;
