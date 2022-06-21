@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/admin_consult_detail.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <h1>
+                <button onclick="location.href='index.html'">M <span>Block</button>
+            </h1>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="top">
+                <span>관리자 페이지</span>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <ul>
+                        <li><div class="list" onclick="location.href='admin_announce.html'">공지사항</div></li>
+                        <li><div class="list" onclick="location.href='admin_news.html'">투자게시판 관리</div></li>
+                        <li><div class="list"onclick="location.href='admin_invest.html'">투자종목 관리</div></li>
+                        <li><div class="list" onclick="location.href='admin_consult.html'">개인 문의</div></li>
+                        <li><div class="list" onclick="location.href='admin_chat.html'">단체 채팅</div></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="title"><h2>개인 문의</h2></div>
+                    <div class="head">
+                        <div class="label">작성자</div>
+                        <div class="info">작성자 이름</div>
+                        <div class="label">작성 날짜</div>
+                        <div class="info">2022-06-21</div>
+                    </div>
+                    <div class="head">
+                        <div class="label">희망 트레이더</div>
+                        <div class="info">Moo</div>
+                        <div class="label">답변 여부</div>
+                        <div class="info">Y</div>
+                    </div>
+                    <div class="head">
+                        <div class="label">연락처</div>
+                        <div class="info">010-0000-0000</div>
+                    </div>
+                    <div class="head">
+                        <div class="label">이메일 </div>
+                        <div class="info" id="copy-email">abc@google.com<i class="fa-regular fa-clone"></i></div>
+                    </div>
+                    <div class="counsel">
+                        <h3>상담내용</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum iste, nesciunt expedita fugit maxime voluptatem exercitationem asperiores dolorem atque inventore laborum dolore aperiam numquam recusandae quibusdam provident natus nobis nihil.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, saepe ratione repudiandae non vel recusandae beatae sint blanditiis laborum architecto ea, ducimus quis tempore dicta nobis commodi quidem aspernatur amet?
+                        </p>
+                    </div>
+                    <button>답변 완료</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../consult_detail.js"></script>
+</body>
+</html>

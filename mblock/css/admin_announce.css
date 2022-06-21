@@ -177,6 +177,10 @@ main .right .list ul li .tit{
     float: left;
     width: 60%;
     cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 0 1rem;
 }
 main .right .list ul li .tit:focus,
 main .right .list ul li .tit:hover{
