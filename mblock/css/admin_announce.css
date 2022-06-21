@@ -91,22 +91,16 @@ main .left ul li .list{
     padding: 1.2rem 1.5rem;
     margin-right: 1rem;
     border-radius: 0 15px 15px 0;
+    transition: all .2s ease-in-out;
 }
-main .left ul li .inner ul li{
-    width: 100%;
-    padding: 1rem 1.5rem;
-    border: none;
-    font-size: 0.8rem;
+main .left ul li:nth-child(1) .list{
+    background: linear-gradient(45deg,#11998e,#38ef7d);
+    color: white;
 }
 main .left ul li:hover .list,
 main .left ul li:focus .list{
     background: linear-gradient(45deg,#11998e,#38ef7d);
     color: white;
-}
-main .left ul li .inner ul li:focus,
-main .left ul li .inner ul li:hover{
-    color: black;
-    font-weight: bold;
 }
 main .right{
     float: left;
@@ -114,7 +108,92 @@ main .right{
     height: 100vh;
     padding: 3rem;
 }
-main .title{
+main .right .title{
     color: rgb(43, 43, 43);
 }
+main .right .control{
+    padding: 1rem 0;
+    float: right;
+}
+main .right .control button{
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #555;
+}
+main .right .label::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+main .right .label{
+    display: flex;
+    margin-top: 4.5rem;
+    font-size: 0.7rem;
+    color: #717171;
+    font-weight: bold;
+    background-color: #f8f8f8;
+    padding: 1.2rem 0;
+    text-align: center;
+}
+main .right .label .check{
+    float: left;
+    width: 5%;
 
+}
+main .right .label .tit{
+    float: left;
+    width: 60%;
+}
+main .right .label .name{
+    float: left;
+    width: 15%;
+}
+main .right .label .date{
+    float: left;
+    width: 15%;
+}
+main .right .label .fix{
+    float: left;
+    width: 5%;
+}
+main .right .list ul li{
+    display: flex;
+    font-size: 0.8rem;
+    color: #000;
+    padding: 1.4rem 0;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+}
+main .right .list ul li .check{
+    float: left;
+    width: 5%;
+}
+main .right .list ul li .tit{
+    float: left;
+    width: 60%;
+    cursor: pointer;
+}
+main .right .list ul li .tit:focus,
+main .right .list ul li .tit:hover{
+    text-decoration: underline;
+}
+main .right .list ul li .name{
+    float: left;
+    width: 15%;
+}
+main .right .list ul li .date{
+    float: left;
+    width: 15%;
+}
+main .right .list ul li .fix{
+    float: left;
+    width: 5%;
+    font-size: 0.7rem;
+    color: #555;
+    cursor: pointer;
+}
