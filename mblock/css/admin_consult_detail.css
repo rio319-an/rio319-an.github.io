@@ -148,7 +148,7 @@ main .right button{
     border: none;
     border-radius: 5px;
     padding: 0.8rem 1rem;
-    background: linear-gradient(45deg,#11998e,#38ef7d);
+    background-color: #38ef7d;
     color: white;
     font-size: 0.8rem;
     float: right;
