@@ -18,6 +18,7 @@
             </h1>
         </div>
     </header>
+    <!-- main -->
     <main>
         <div class="container">
             <div class="top">
@@ -37,7 +38,7 @@
                     <div class="title"><h2>공지사항 관리</h2></div>
                     <div class="control">
                         <button onclick="location.href='admin_announce_add.html'">추가</button>
-                        <button>삭제</button>
+                        <button id="delete">삭제</button>
                     </div>
                     <div class="label">
                         <div class="check"></div>
@@ -50,7 +51,7 @@
                         <ul>
                             <li>
                                 <div class="check"><input type="checkbox"></div>
-                                <div class="tit">announce board title</div>
+                                <div class="tit" onclick="location.href='admin_announce_detail.html'">announce board title</div>
                                 <div class="name">작성자</div>
                                 <div class="date">2022-06-21</div>
                                 <div class="fix">수정</div>
@@ -85,9 +86,18 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <i class="fa-solid fa-xmark"></i>
+                            <strong>삭제하시겠습니까?</strong>
+                            <p>삭제 후 복구가 불가합니다</p>
+                            <div class="delete">삭제하기</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
+    <script src="../modal.js"></script>
 </body>
 </html>

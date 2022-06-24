@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/admin_announce_detail.css">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <div class="container">
+            <h1>
+                <button onclick="location.href='index.html'">M <span>Block</button>
+            </h1>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <div class="container">
+            <div class="top">
+                <span>관리자 페이지</span>
+            </div>
+            <div class="content">
+                <div class="left">
+                    <ul>
+                        <li><div class="list" onclick="location.href='admin_announce.html'">공지사항</div></li>
+                        <li><div class="list" onclick="location.href='admin_news.html'">투자게시판 관리</div></li>
+                        <li><div class="list"onclick="location.href='admin_invest.html'">투자종목 관리</div></li>
+                        <li><div class="list" onclick="location.href='admin_consult.html'">개인 문의</div></li>
+                        <li><div class="list" onclick="location.href='admin_chat.html'">단체 채팅</div></li>
+                    </ul>
+                </div>
+                <div class="right">
+                    <div class="title"><h2>공지사항 관리</h2></div>
+                    <h4>공지사항 제목</h4>
+                    <div class="info">
+                        <div class="img">
+                            <img src="../images/profile1.jpg" alt="공지사항이미지">
+                        </div>
+                        <div class="info-inner">
+                            <h5>Moo</h5>
+                            <div class="num">2022년 06월 22일 17:11</div>
+                            <div class="num">조회 131</div>
+                        </div>
+                        <div class="control">
+                            <span onclick="location.href='admin_announce_add.html'">수정하기</span>
+                            <span id="delete">삭제하기</span>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <img src="../images/gradient2.jpg" alt="공지사항이미지2">
+                        <div class="content-inner">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, dolor, obcaecati soluta corrupti quas ullam quidem atque incidunt eaque esse neque nihil enim illo reiciendis error deserunt repellendus tempora? Maiores.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione fugit qui nisi amet, provident minus ipsa exercitationem dolores eum aperiam ex nesciunt eaque id! Ea nesciunt quisquam aperiam ullam harum!
+                        </div>
+                    </div>
+                    <div class="modal">
+                        <div class="modal-content">
+                            <i class="fa-solid fa-xmark"></i>
+                            <strong>삭제하시겠습니까?</strong>
+                            <p>삭제 후 복구가 불가합니다</p>
+                            <div class="delete">삭제하기</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="../modal.js"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/news.css">
+    <link rel="stylesheet" href="../css/news_detail.css">
 </head>
 <body>
     <!-- header -->
@@ -45,22 +45,38 @@
             <button onclick="location.href='login.html'"><i class="fa-solid fa-arrow-right-to-bracket"></i></button>
         </div>
     </header>
+    <!-- main -->
+    <main>
+        <div class="background"></div>
+        <div class="main-img">
+            <img src="../images/mock2.png" alt="뉴스이미지">
+            <h3>portfolio investment board news title</h3>
+            <p>2022년 06월 24일</p>
+        </div>
+    </main>
     <!-- board -->
     <section id="board">
         <div class="container">
-            <div class="title">
-                <h3>Portfolio</h3>
-                <h2>News</h2>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ut nulla non consequuntur. Nisi hic natus doloremque dicta necessitatibus, eaque praesentium rem, maxime alias aperiam blanditiis ratione. Voluptatem, consequatur animi?
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed, quia excepturi deleniti cum perferendis assumenda cumque ipsum, quidem aperiam rem quas, quibusdam eos tenetur eum minus. Earum labore magnam iste.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum culpa laboriosam repellat nemo voluptatum in saepe nisi veniam voluptates nulla sit ex at consequatur, optio unde laudantium esse pariatur ratione?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quod voluptates accusamus non molestias dignissimos accusantium est reiciendis minus mollitia eos possimus suscipit impedit debitis voluptatem dolore deserunt? Iusto, earum.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas at error quisquam explicabo delectus aspernatur. Corrupti, incidunt! Provident soluta sapiente, quibusdam, nihil sequi accusantium dolorem commodi consequuntur dolorum architecto quam.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque nostrum quas corrupti quibusdam est ad officiis, eveniet quos dolores odit, aliquam quia, optio ab. Ipsa debitis ad nulla quos numquam!
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque optio, quia nostrum ratione eius cupiditate earum, voluptatem quibusdam doloremque laboriosam animi. Modi sint totam et earum explicabo optio recusandae! Nisi!
             </div>
-            <div class="board-main" onclick="location.href='news_detail.html'">
-                <div class="left">
-                    <img src="../images/mock4.png" alt="샘플 1">
+            <div class="writer">
+                <div class="writer-img">
+                    <img src="../images/profile1.jpg" alt="뉴스프로필">
                 </div>
-                <div class="right">
-                    <h3>investment board title investment board title investment board title investment board title</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa quod beatae placeat doloribus dicta minima. Provident accusamus fugiat ullam officia architecto cumque hic, soluta culpa, et in, pariatur dignissimos praesentium!</p>
-                    <button>Learn more <i class="fa-solid fa-arrow-right"></i></button>
+                <div class="writer-info">
+                    <h4>Moo</h4>
+                    <p>Team Leader</p>
                 </div>
+            </div>
+            <div class="more">
+                <h3>More News</h3>
             </div>
             <div class="board-con">
                 <div class="board-inner">
@@ -74,7 +90,7 @@
                 </div>
                 <div class="board-inner">
                     <div class="img">
-                        <img src="../images/mock2.png" alt="샘플3">
+                        <img src="../images/mock5.png" alt="샘플3">
                     </div>
                     <div class="content">
                         <h3>Title</h3>
@@ -90,52 +106,34 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum dolores quia quibusdam. Voluptates harum dolores quia quibusdam. Voluptates harum dolores quia quibusdam.</p>
                     </div>
                 </div>
-                <div class="board-inner">
-                    <div class="img">
-                        <img src="../images/mock5.png" alt="샘플5">
-                    </div>
-                    <div class="content">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum dolores quia quibusdam. Voluptates harum dolores quia quibusdam. Voluptates harum dolores quia quibusdam.</p>
-                    </div>
-                </div>
-                <div class="board-inner">
-                    <div class="img">
-                        <img src="../images/mock6.png" alt="샘플6">
-                    </div>
-                    <div class="content">
-                        <h3>Title</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates harum dolores quia quibusdam. Voluptates harum dolores quia quibusdam. Voluptates harum dolores quia quibusdam.</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
-    <!-- bottom -->
-    <section id="bottom">
-        <div class="container">
-            <div class="bottom-nav">
-                <h3>M <span>Block</span></h3>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Business</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Customer</a></li>
-                </ul>
+        <!-- bottom -->
+        <section id="bottom">
+            <div class="container">
+                <div class="bottom-nav">
+                    <h3>M <span>Block</span></h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Customer</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-info">
+                    <p>E-mail</p>
+                    <h4>aaa@google.com</h4>
+                    <p>Tel.</p>
+                    <h4>010-9999-9999</h4>
+                </div>
+                <div class="bottom-line"></div>
+                <div class="bottom-sns">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
+                </div>
             </div>
-            <div class="bottom-info">
-                <p>E-mail</p>
-                <h4>aaa@google.com</h4>
-                <p>Tel.</p>
-                <h4>010-9999-9999</h4>
-            </div>
-            <div class="bottom-line"></div>
-            <div class="bottom-sns">
-                <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-telegram"></i></a>
-                <a href="#" class="icon"><i class="fa-brands fa-youtube"></i></a>
-            </div>
-        </div>
-    </section>
+        </section>
 </body>
 </html>
