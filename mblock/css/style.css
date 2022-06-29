@@ -201,7 +201,7 @@ section {
     padding: 5rem 0;
 }
 
-section:nth-child(2n+1){
+section:nth-child(2n){
     background-color: #f8f8f8;
 }
 
@@ -328,7 +328,33 @@ section .more i{
 }
 
 /* associate */
-
+section .partner-list{
+    display: flex;
+    flex-direction: column;
+}
+section .partner-list ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+section .partner-list ul li{
+    float: left;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+section .partner-list ul li img{
+    height: 75px;
+    margin-bottom: 2rem;
+}
+section .partner-list ul li p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
 /* bottom */
 section .bottom-nav{
     width: 100%;
