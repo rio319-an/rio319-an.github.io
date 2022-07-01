@@ -7,7 +7,7 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="../css/admin_announce.css">
+    <link rel="stylesheet" href="../css/admin_member.css">
 </head>
 <body>
     <!-- header -->
@@ -37,54 +37,48 @@
                     </ul>
                 </div>
                 <div class="right">
-                    <div class="title"><h2>공지사항 관리</h2></div>
-                    <div class="control">
-                        <button onclick="location.href='admin_announce_add.html'">추가</button>
-                        <button id="delete">삭제</button>
-                    </div>
+                    <div class="title"><h2>멤버 관리</h2></div>
                     <div class="label">
-                        <div class="check"></div>
-                        <div class="tit">제목</div>
-                        <div class="name">작성자</div>
-                        <div class="date">작성 날짜</div>
-                        <div class="fix"></div>
+                        <div class="info">이름</div>
+                        <div class="info">아이디</div>
+                        <div class="info">직책</div>
+                        <div class="info">휴대폰 번호</div>
+                        <div class="control">승인</div>
+                        <div class="control">삭제</div>
                     </div>
                     <div class="list">
                         <ul>
                             <li>
-                                <div class="check"><input type="checkbox"></div>
-                                <div class="tit" onclick="location.href='admin_announce_detail.html'">announce board title</div>
-                                <div class="name">작성자</div>
-                                <div class="date">2022-06-21</div>
-                                <div class="fix">수정</div>
+                                <div class="info-name" onclick="location.href='admin_member_detail.html'">멤버 이름</div>
+                                <div class="info">멤버 아이디</div>
+                                <div class="info">Coin master</div>
+                                <div class="info">010-0000-0000</div>
+                                <div class="control"><i class="fa-solid fa-check" style="color: #11998e;"></i></div>
+                                <div class="control" id="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </li>
                             <li>
-                                <div class="check"><input type="checkbox"></div>
-                                <div class="tit">announce board title</div>
-                                <div class="name">작성자</div>
-                                <div class="date">2022-06-20</div>
-                                <div class="fix">수정</div>
+                                <div class="info-name">멤버 이름</div>
+                                <div class="info">멤버 아이디</div>
+                                <div class="info">Coin master</div>
+                                <div class="info">010-0000-0000</div>
+                                <div class="control"><i class="fa-solid fa-check" style="color: #11998e;"></i></div>
+                                <div class="control" id="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </li>
                             <li>
-                                <div class="check"><input type="checkbox"/></div>
-                                <div class="tit">announce board title</div>
-                                <div class="name">작성자</div>
-                                <div class="date">2022-06-17</div>
-                                <div class="fix">수정</div>
+                                <div class="info-name">멤버 이름</div>
+                                <div class="info">멤버 아이디</div>
+                                <div class="info">Coin master</div>
+                                <div class="info">010-0000-0000</div>
+                                <div class="control"><i class="fa-solid fa-check" style="color: #11998e;"></i></div>
+                                <div class="control" id="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </li>
                             <li>
-                                <div class="check"><input type="checkbox"></div>
-                                <div class="tit">announce board title</div>
-                                <div class="name">작성자</div>
-                                <div class="date">2022-06-15</div>
-                                <div class="fix">수정</div>
-                            </li>
-                            <li>
-                                <div class="check"><input type="checkbox"></div>
-                                <div class="tit">announce board title</div>
-                                <div class="name">작성자</div>
-                                <div class="date">2022-06-12</div>
-                                <div class="fix">수정</div>
+                                <div class="info-name">멤버 이름</div>
+                                <div class="info">멤버 아이디</div>
+                                <div class="info">Coin master</div>
+                                <div class="info">010-0000-0000</div>
+                                <div class="control">승인하기</div>
+                                <div class="control" id="delete"><i class="fa-solid fa-trash-can"></i></div>
                             </li>
                         </ul>
                     </div>

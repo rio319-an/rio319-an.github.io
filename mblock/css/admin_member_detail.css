@@ -93,7 +93,7 @@ main .left ul li .list{
     border-radius: 0 15px 15px 0;
     transition: all .2s ease-in-out;
 }
-main .left ul li:nth-child(5) .list{
+main .left ul li:nth-child(6) .list{
     background: linear-gradient(45deg,#11998e,#38ef7d);
     color: white;
 }
@@ -110,47 +110,108 @@ main .right{
 }
 main .right .title{
     color: rgb(43, 43, 43);
+}
+main .right .profile::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+main .right .profile{
+    margin-top: 2.5rem;
+    width: 75%;
+    border-top: 2px solid #f4f4f4;
+    border-bottom: 2px solid #f4f4f4;
+}
+main .right .profile .info{
+    float: left;
+    width: 75%;
+    padding: 3rem 25% 3rem 0;
+}
+main .right .profile .info .form-group{
     margin-bottom: 2.5rem;
-}
-main .right .head{
     display: flex;
-    border: 1px solid #f5f5f5;
+    flex-direction: column;
+    position: relative;
 }
-main .right .head .label{
-    float: left;
-    width: 15%;
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 1rem 1.5rem;
-    font-size: 0.8rem;
-    font-weight: bold;
-    color: #777777;
-}
-main .right .head .info{
-    float: left;
-    width: 35%;
-    text-align: left;
-    padding: 1rem 1.5rem;
+main .right .profile .info .form-group label{
+    margin-bottom: 1rem;
     font-size: 0.9rem;
+    color: #555555;
 }
-main .right .head .info i{
-    color: #777777;
-    margin-left: 1.5rem;
+main .right .profile .info .form-group input{
+    padding: 1rem 0.8rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+main .right .profile .info .form-group input:focus{
+    border: 1px solid #a7e0a5;
+    box-shadow: 0 0 5px #a7e0a5;
+}
+main .right .profile .img{
+    float: left;
+    width: 25%;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main .right .profile .img img{
+    width: 264px;
+    height: 264px;
+    border-radius: 132px;
+    margin-bottom: 2rem;
+}
+main .right .profile .img img.active{
+    display: block;
+}
+main .right .profile .img button{
+    padding: 0.75rem 1rem;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: rgb(43, 43, 43);
     cursor: pointer;
 }
-main .right .counsel{
-    padding: 3rem 1.5rem 5rem 1.5rem;
+main .right .edit{
+    padding: 3rem 0;
 }
-main .right .counsel p{
-    margin-top: 2rem;
+main .right .edit .edit-form{
+    margin-top: 2.5rem;
+    width: 75%;
+    display: flex;
+    position: relative;
+    align-items: center;
 }
-main .right button{
+main .right .edit .edit-form .form-group{
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+main .right .edit .edit-form .form-group label{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #555555;
+}
+main .right .edit .edit-form .form-group input{
+    padding: 1rem 0.8rem;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+main .right .edit .edit-form .form-group input:focus{
+    border: 1px solid #a7e0a5;
+    box-shadow: 0 0 5px #a7e0a5;
+}
+main .right .edit .edit-form button{
+    position: absolute;
+    right: 0;
     border: none;
     border-radius: 5px;
     padding: 0.8rem 1rem;
     background-color: #38ef7d;
     color: white;
     font-size: 0.8rem;
-    float: right;
     cursor: pointer;
 }
