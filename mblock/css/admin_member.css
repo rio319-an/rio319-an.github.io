@@ -154,7 +154,8 @@ main .right .list ul li .info{
     float: left;
     width: 20%;
 }
-main .right .list ul li .control{
+main .right .list ul li .control-delete,
+main .right .list ul li .control-accept{
     float: left;
     width: 10%;
     font-size: 0.7rem;
@@ -162,7 +163,8 @@ main .right .list ul li .control{
     cursor: pointer;
 }
 /* modal */
-main .right .modal{
+main .right .modal,
+main .right .modal-accept{
     display: none;
     position: fixed;
     z-index: 10;
@@ -173,21 +175,25 @@ main .right .modal{
     background-color: #000;
     background-color: rgba(0, 0, 0, 0.4);
 }
-main .right .modal i{
+main .right .modal i,
+main .right .modal-accept i{
     cursor: pointer;
     float: right;
 }
-main .right .modal .modal-content{
+main .right .modal .modal-content,
+main .right .modal-accept .modal-content{
     background-color: white;
     padding: 2rem 1.5rem 1rem 1.5rem;
     border-radius: 10px;
     width: 25%;
     margin: 25% auto;
 }
-main .right .modal .modal-content strong{
+main .right .modal .modal-content strong,
+main .right .modal-accept .modal-content strong{
     margin-top: 2rem;
 }
-main .right .modal .modal-content p{
+main .right .modal .modal-content p,
+main .right .modal-accept .modal-content p{
     color: #777777;
     margin-top: 0.4rem;
     font-size: 0.9rem;
@@ -204,8 +210,24 @@ main .right .modal .modal-content .delete{
     border-radius: 10px;
     transition: all .2s;
 }
+main .right .modal-accept .modal-content .accept{
+    color: #38ef7d;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 3.5rem;
+    text-align: center;
+    cursor: pointer;
+    padding: 0.6rem 0;
+    border-radius: 10px;
+    transition: all .2s;
+}
 main .right .modal .modal-content .delete:hover,
 main .right .modal .modal-content .delete:focus{
     background-color: darkred;
+    color: white;
+}
+main .right .modal-accept .modal-content .accept:hover,
+main .right .modal-accept .modal-content .accept:focus{
+    background-color: #38ef7d;
     color: white;
 }
