@@ -44,17 +44,17 @@
                         <div class="info">직책</div>
                         <div class="info">휴대폰 번호</div>
                         <div class="control">승인</div>
-                        <div class="control">삭제</div>
+                        <div class="control">관리</div>
                     </div>
                     <div class="list">
                         <ul>
                             <li>
-                                <div class="info-name" onclick="location.href='admin_member_detail.html'">멤버 이름</div>
+                                <div class="info-name" >멤버 이름</div>
                                 <div class="info">멤버 아이디</div>
                                 <div class="info">Coin master</div>
                                 <div class="info">010-0000-0000</div>
                                 <div class="control-accept"><i class="fa-solid fa-check" style="color: #11998e;"></i></div>
-                                <div class="control-delete" id="delete"><i class="fa-solid fa-trash-can"></i></div>
+                                <div class="control-delete" id="delete" onclick="location.href='admin_member_detail.html'">수정하기</div>
                             </li>
                             <li>
                                 <div class="info-name">멤버 이름</div>
@@ -62,7 +62,7 @@
                                 <div class="info">Coin master</div>
                                 <div class="info">010-0000-0000</div>
                                 <div class="control-accept"><i class="fa-solid fa-check" style="color: #11998e;"></i></div>
-                                <div class="control-delete" id="delete"><i class="fa-solid fa-trash-can"></i></div>
+                                <div class="control-delete" id="delete">수정하기</div>
                             </li>
                             <li>
                                 <div class="info-name">멤버 이름</div>
@@ -70,38 +70,21 @@
                                 <div class="info">Coin master</div>
                                 <div class="info">010-0000-0000</div>
                                 <div class="control-accept"><i class="fa-solid fa-check" style="color: #11998e;"></i></div>
-                                <div class="control-delete" id="delete"><i class="fa-solid fa-trash-can"></i></div>
+                                <div class="control-delete" id="delete">수정하기</div>
                             </li>
                             <li>
                                 <div class="info-name">멤버 이름</div>
                                 <div class="info">멤버 아이디</div>
                                 <div class="info">Coin master</div>
                                 <div class="info">010-0000-0000</div>
-                                <div class="control-accept">승인하기</div>
-                                <div class="control-delete" id="delete"><i class="fa-solid fa-trash-can"></i></div>
+                                <div class="control-accept">대기중</div>
+                                <div class="control-delete" id="delete">수정하기</div>
                             </li>
                         </ul>
-                    </div>
-                    <div class="modal">
-                        <div class="modal-content">
-                            <i class="fa-solid fa-xmark"></i>
-                            <strong>삭제하시겠습니까?</strong>
-                            <p>삭제 후 복구가 불가합니다</p>
-                            <button>삭제하기</button>
-                        </div>
-                    </div>
-                    <div class="modal-accept">
-                        <div class="modal-content">
-                            <i class="fa-solid fa-xmark"></i>
-                            <strong>승인하시겠습니까?</strong>
-                            <p>선택 멤버를 승인합니다</p>
-                            <button>승인하기</button>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
-    <script src="../modal_member.js"></script>
 </body>
 </html>
